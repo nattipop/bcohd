@@ -1,0 +1,66 @@
+#home {
+  background-color: beige;
+  width: 100%;
+
+  font-size: 20px;
+  display: block;
+}
+
+#hero {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-background {
+  object-fit: cover;
+  height: 90vh;
+  min-width: 100%;
+}
+
+#hero-header {
+  position: absolute;
+  color: white;
+}
+
+#about-section {
+  background-color: white;
+  padding: 100px;
+}
+
+#about-image {
+  width: 200px;
+  margin-left: 50px;
+}
+
+#about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#services-section {
+  background-color: #f1f1f1;
+  padding: 100px;
+}
+
+.service-images {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.service-description {
+  font-size: 20px;
+  width: 250px;
+  margin: 0px 20px;
+  text-align: center;
+}
+
+.home-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
