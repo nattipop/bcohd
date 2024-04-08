@@ -4,6 +4,7 @@
 
   font-size: 20px;
   display: block;
+  text-align: center;
 }
 
 #hero {
@@ -30,14 +31,14 @@
 }
 
 #about-image {
-  width: 200px;
-  margin-left: 50px;
+  width: 300px;
+  margin: 0px 20px 10px 0px;
+  float: left;
 }
 
 #about-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: black;
+  text-align: left;
 }
 
 #services-section {

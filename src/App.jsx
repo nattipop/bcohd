@@ -1,27 +1,20 @@
-import { useEffect } from "react";
 import "./css/App.css"
 
 function App() {
-  useEffect(() => {
-    document.title = "Website Example | Home"
-    window.scrollTo(0, 0);
-  }, [])
   return (
     <div id="home">
       <section id="hero-section">
         <div id="hero">
-          <img id="hero-background" src="https://scontent-msp1-1.xx.fbcdn.net/v/t39.30808-6/366348802_234916502846127_4754259628068731190_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=7HYhV3kiB8gAX8CX8HN&_nc_ht=scontent-msp1-1.xx&oh=00_AfCfSGzS0ceyib_snnasioqPAstKCe_ND178urCLf6IZng&oe=660A15FE" alt="" />
+          <img id="hero-background" src="https://res.cloudinary.com/dawteptkh/image/upload/v1712594724/366348802_234916502846127_4754259628068731190_n_kdfwmz.jpg" alt="" />
           <h1 id="hero-header">Barron County Overhead Doors</h1>
         </div>
       </section>
       <section id="about-section">
-        <div className="row">
-          <div className="col-4">
-            <img id="about-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1711467410/linkedin-sales-solutions-pAtA8xe_iVM-unsplash_wugsfz.jpg" alt="" />
+        <div>
+          <div>
+            <img id="about-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1712594735/404306440_295507313453712_3059014787345549309_n_n96kex.jpg" alt="" />
           </div>
-          <div className="col-8" id="about-text">
-            <h3>This filler text will be replaced by a write-up about your business. It should be short, friendly and informative</h3>
-          </div>
+            <h3 id="about-text">Hi! My name is Michael Stamps. I&apos;m a southern boy that has lived all over the south. My beautiful wife and I lived and worked in St. Louis, MO, for 8 years. We moved north to her hometown of Chetek in 2022 where I opened Barron County Overhead Doors LLC.<br/><br/>I began installing and repairing garage doors in high school and have since acquired 15 years of extensive experience in the overhead garage door industry handling residential and commercial installations and repairs. In my years of experience, ve partnered with companies large and small to address a wide variety of needs.<br/><br/>In addition to garage doors, I also own True North Facilities Services LLC which handles residential and commercial maintenance. Previous roles have included Facilities Technician for Hillcraft Services which managed maintenance for over 150+ Aldi locations, Facilities Supervisor for Kaldi&apos;s Coffee Roasting Company, Facilities Director/Construction Manager for Domaine Wine Storage.<br/><br/>My wife and I have three beautiful children - 2 boys and a girl - who are our world. We enjoy hiking, traveling and great food and love all that the Northwoods has to offer.</h3>
         </div>
       </section>
       <section id="services-section">
