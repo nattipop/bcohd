@@ -9,6 +9,7 @@ function App() {
           <h1 id="hero-header">Barron County Overhead Doors</h1>
         </div>
       </section>
+      <div className="fb-page" data-href="https://www.facebook.com/profile.php?id=100089833360840" data-tabs="timeline" data-width="1300" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100089833360840" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100089833360840">Barron County Overhead Doors</a></blockquote></div>
       <section id="about-section">
         <div>
           <div>
@@ -18,22 +19,20 @@ function App() {
         </div>
       </section>
       <section id="services-section">
-        <div className="row">
-          <div className="col home-service">
-            <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1710719289/blake-verdoorn-cssvEZacHvQ-unsplash_pkqqun.jpg" className="service-images" alt="" />
-            <h1 className="service-header">Service</h1>
-            <h3 className="service-description">This is a service description. The quick brown fox jumps over the lazy dog.</h3>
-          </div>
-          <div className="col home-service">
-          <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1710719208/jorge-vasconez-c4cWawGBFv8-unsplash_i1yyc3.jpg" className="service-images" alt="" />
-            <h1 className="service-header">Service</h1>
-            <h3 className="service-description">This is a service description. The quick brown fox jumps over the lazy dog.</h3>
-          </div>
-          <div className="col home-service">
-            <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1710719398/jesse-gardner-9DHyVy-G1rM-unsplash_h6eiyt.jpg" className="service-images" alt="" />
-            <h1 className="service-header">Service</h1>
-            <h3 className="service-description">This is a service description. The quick brown fox jumps over the lazy dog.</h3>
-          </div>
+        <div className="home-service">
+          <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1712594746/424569635_336349606036149_1377031431520613176_n_xvzkcn.jpg" className="service-images" alt="" />
+          <h1 className="service-header">Service</h1>
+          <h3 className="service-description">This is a service description. The quick brown fox jumps over the lazy dog.</h3>
+        </div>
+        <div className="home-service">
+          <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1712594741/421483019_331679836503126_1834004321399508433_n_rfx8rw.jpg" className="service-images" alt="" />
+          <h1 className="service-header">Service</h1>
+          <h3 className="service-description">This is a service description. The quick brown fox jumps over the lazy dog.</h3>
+        </div>
+        <div className="col-4 home-service">
+          <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1712594730/392875929_274104815593962_8239132060169234559_n_esiucq.jpg" className="service-images" alt="" />
+          <h1 className="service-header">Service</h1>
+          <h3 className="service-description">This is a service description. The quick brown fox jumps over the lazy dog.</h3>
         </div>
       </section>
     </div>

@@ -1,7 +1,5 @@
 #home {
-  background-color: beige;
   width: 100%;
-
   font-size: 20px;
   display: block;
   text-align: center;
@@ -22,11 +20,13 @@
 
 #hero-header {
   position: absolute;
-  color: white;
+  color: var(--neutral);
+  font-size: 40px;
 }
 
 #about-section {
-  background-color: white;
+  background-color: var(--neutral);
+  color: var(--brown);
   padding: 100px;
 }
 
@@ -37,31 +37,29 @@
 }
 
 #about-text {
-  color: black;
   text-align: left;
 }
 
 #services-section {
-  background-color: #f1f1f1;
+  background-color: var(--brown);
+  color: var(--neutral);
+  font-size: 10px;
   padding: 100px;
+  display: flex;
+}
+
+.home-service {
+  width: 300px;
 }
 
 .service-images {
-  height: 200px;
-  width: 150px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
 
 .service-description {
   font-size: 20px;
-  width: 250px;
-  margin: 0px 20px;
   text-align: center;
-}
-
-.home-service {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: 300px;
 }
