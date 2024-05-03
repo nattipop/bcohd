@@ -1,14 +1,38 @@
+import { useEffect } from "react";
 import "./css/App.css"
 import logo from "/BarronCountyOverheadDoors.Orange.png";
 import iconImage from "/Bcohd.png";
 
 function App() {
+  useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+  })
   return (
     <div id="home">
       <section id="hero-section">
         <div id="hero">
-          <img id="hero-background" src="https://res.cloudinary.com/dawteptkh/image/upload/c_crop,h_554,w_1108/v1712594724/366348802_234916502846127_4754259628068731190_n_kdfwmz.jpg" alt="" />
+           <div className="pa-carousel-widget" style={{width: "100vw", height: "600px", display: "none", zIndex: "1", position: "static"}}
+              data-link="https://photos.app.goo.gl/jxnJxALwEdmTB6u76"
+              data-title="BCOHD"
+              data-description="8 new items added to shared album"
+              data-background-color="#242424">
+              <object data="https://lh3.googleusercontent.com/pw/AP1GczNhQ1zqLen40o1Y43SfB7pWLqfImtGyQEVukAafuIwCagjfuXKMTjTInHox4nimaNFEhkhojrR7qWOO1w6eHGMdBhir1czz-hZ8ffhJoXMb6cZQMek=w1920-h1080"></object>
+              <object data="https://lh3.googleusercontent.com/pw/AP1GczPLNNGYYJxMvwcDytEcrCZPwG543PHtdlUdmxuT1kAs0-S74MQZgPM2ySsCmPNZhaaV2bmG7-X76D_gOM3w2Jv6-ivhzfkc4-hwbu3P6f2m5G-x1dQ=w1920-h1080"></object>
+              <object data="https://lh3.googleusercontent.com/pw/AP1GczNaZQXbV_ZlzFLJIQTaZF7qiT8jSvhqjFDaeW-OeWEjmZagyXLvxN3Rlk9OZ_Nu0hW7wusFf9KaYkLgObVDXmkNY26C4hftn5HrtWl19zLQyU8mSDc=w1920-h1080"></object>
+              <object data="https://lh3.googleusercontent.com/pw/AP1GczNIfRTA2bjFQ4AGsqWDuoLhpszRLQkS--uG3H6GbdFZ7MpqEsbhc3xgPKKCI8ifVI2tOhbB1vd4y8WvCbvjzF8B86yb13l57aFEkX1jS9fXLo-a9JE=w1920-h1080"></object>
+              <object data="https://lh3.googleusercontent.com/pw/AP1GczMgl2HDYNycZTTnTDCPEp-Im3nQ2RCLLDnjFCdDKXV1XpD6HH1pog2Ugg01PPKd4pLWfCP9Tfm9b_s06tQhcPg9DPOmarOYgA2iDHsr6f4vR6gFld8=w1920-h1080"></object>
+              <object data="https://lh3.googleusercontent.com/pw/AP1GczN41kVOaMiawtK_GzyaDT6Q2wCnDHMzQxpmwMFL6jxFo2vK380B1KoBe_zX8Dal7JKjAXUcIGg2DPJJwqa39RxKXruXhaLe-HHhBM8np1LKWRKmNVI=w1920-h1080"></object>
+              <object data="https://lh3.googleusercontent.com/pw/AP1GczPPH7d1zG9S-3do8qHg4lTRdL9jC9lvL40xCN9Z6teCVfbqR0e3gKGMn500C5MtlHOCLLVeGPXsyQbqJT4LjoFJwlgqIX-x500h20qWLh5hIjy3Zrs=w1920-h1080"></object>
+              <object data="https://lh3.googleusercontent.com/pw/AP1GczM_Y-YrnkaZ37sj6JFqMKabwkb2e2brPg_PupEFagT3njJH3CkT5GjELISFlVNa5PIogTOaD-OOCJNvAkBbTkxhoqOradJtcIihFzRL8Ee4S0aP-II=w1920-h1080"></object>
+            </div>{/* <img id="hero-background" src="https://res.cloudinary.com/dawteptkh/image/upload/c_crop,h_554,w_1108/v1712594724/366348802_234916502846127_4754259628068731190_n_kdfwmz.jpg" alt="" /> */}
           <div id="logo-hero">
+           
+
             <img alt="" src={logo} />
           </div>
         </div>
