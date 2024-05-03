@@ -1,15 +1,34 @@
 import "./css/App.css"
+import logo from "/BarronCountyOverheadDoors.Orange.png";
+import iconImage from "/Bcohd.png";
 
 function App() {
   return (
     <div id="home">
       <section id="hero-section">
         <div id="hero">
-          <img id="hero-background" src="https://res.cloudinary.com/dawteptkh/image/upload/v1712594724/366348802_234916502846127_4754259628068731190_n_kdfwmz.jpg" alt="" />
-          <h1 id="hero-header">Barron County Overhead Doors</h1>
+          <img id="hero-background" src="https://res.cloudinary.com/dawteptkh/image/upload/c_crop,h_554,w_1108/v1712594724/366348802_234916502846127_4754259628068731190_n_kdfwmz.jpg" alt="" />
+          <div id="logo-hero">
+            <img alt="" src={logo} />
+          </div>
         </div>
       </section>
-      <div className="fb-page" data-href="https://www.facebook.com/profile.php?id=100089833360840" data-tabs="timeline" data-width="1300" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100089833360840" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100089833360840">Barron County Overhead Doors</a></blockquote></div>
+      <div id="icon">
+        <img src={iconImage} alt="" />
+      </div>
+      <div id="number">
+        <h2>715-931-7924</h2>
+      </div>
+      <section id="map-section">
+        <iframe
+          width="700"
+          height="450"
+          style={{border:"0"}}
+          loading="lazy"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDeq9ZDHk_5yIu_upHgfurpt4eQM3UF0EE
+          &q=Barron+County+WI">
+        </iframe>
+      </section>
       <section id="about-section">
         <div>
           <div>
