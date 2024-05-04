@@ -43,8 +43,8 @@
   position: absolute;
   top: 0;
   width: calc(100vw - 300px);
-  background-color: rgba(0, 0, 0, 0.619);
-  padding: 200px 150px 200px 150px;
+  background-color: rgba(0, 0, 0, 0.485);
+  padding: 130px 150px 262px 150px;
   z-index: 10;
 }
 
@@ -66,14 +66,62 @@
   font-size: 40px;
 }
 
+#contact-div {
+  background-color: var(--orange);
+  position: relative;
+  margin-top: -20px;
+  padding: 20px;
+  z-index: 20;
+}
+
+#contact-div h3 {
+  font-size: 30px;
+  margin: 10px;
+  color: var(--dark);
+}
+
+.contact-link-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-links {
+  color: var(--dark);
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 15px;
+}
+
+.contact-links:hover {
+  color: var(--orange-different);
+}
+
+.contact-img {
+  margin: 5px;
+}
+
 #map-section {
   padding: 50px;
+  position: static;
+  z-index: 15;
+  color: var(--light);
+}
+
+#map-section img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
 }
 
 #about-section {
-  background-color: var(--dark);
-  color: var(--neutral);
-  padding: 0px 100px;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 50px 150px;
+}
+
+#about-section h2 {
+  font-size: 30px;
 }
 
 #about-image {
@@ -85,28 +133,4 @@
 #about-text {
   text-align: left;
   font-size: 18px;
-}
-
-#services-section {
-  background-color: var(--brown);
-  color: var(--neutral);
-  font-size: 10px;
-  padding: 100px;
-  display: flex;
-}
-
-.home-service {
-  width: 300px;
-}
-
-.service-images {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-}
-
-.service-description {
-  font-size: 20px;
-  text-align: center;
-  width: 300px;
 }

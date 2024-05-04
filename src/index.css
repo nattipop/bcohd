@@ -12,10 +12,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --orange: rgb(248,156,52)
-  --orange-different: rgb(181, 96, 17);
+  --orange: rgb(248, 156, 52);
+  --orange-different: #b56011;
   --brown: rgb(65, 52, 42);
-  --dark: #242424;;
+  --dark: #242424;
+  --light: #a6a6a6;
   --neutral: rgb(187, 187, 187);
 }
 
