@@ -24,10 +24,18 @@
 }
 
 #number h2 {
-  color: rgb(248, 156, 52);
   padding: 10px 20px;
   margin: 0px;
   font-size: 25px;
+}
+
+#number a {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+#number a:hover {
+  color: var(--orange-different);
 }
 
 #hero {
@@ -106,12 +114,43 @@
   position: static;
   z-index: 15;
   color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#map-text {
+  font-size: 30px;
+  width: 400px;
+  padding: 50px;
+}
+
+#facebook-text {
+  font-size: 30px;
+}
+
+#facebook-text a {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+#facebook-text a:hover {
+  color: var(--orange-different);
 }
 
 #map-section img {
   width: 600px;
   height: 400px;
   object-fit: cover;
+}
+
+#facebook-div {
+  margin: 50px;
+}
+
+#facebook-section {
+  background-color: #1b1b1b;
+  padding: 20px;
 }
 
 #about-section {
@@ -121,7 +160,8 @@
 }
 
 #about-section h2 {
-  font-size: 30px;
+  font-size: 40px;
+  text-align: left;
 }
 
 #about-image {
@@ -133,4 +173,63 @@
 #about-text {
   text-align: left;
   font-size: 18px;
+}
+
+#footer {
+  background-color: var(--dark);
+  padding: 50px;
+}
+
+.footer-link-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  color: var(--orange-different);
+  margin-left: 5px;
+}
+
+.footer-links:hover {
+  color: var(--orange);
+}
+
+#footer-credit {
+  color: var(--orange-different);
+  font-size: 13px;
+}
+
+#footer-credit a {
+  color: var(--orange-different);
+  text-decoration: underline;
+}
+
+#footer-credit a:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+/* 2XL */
+@media (max-width: 1536px) {
+}
+
+/* XL */
+@media (max-width: 1288px) {
+}
+
+/* L */
+@media (max-width: 1024px) {
+}
+
+/* M */
+@media (max-width: 768px) {
+}
+
+/* S */
+@media (max-width: 640px) {
+}
+
+/* XS */
+@media (max-width: 475px) {
 }
