@@ -12,6 +12,11 @@
   z-index: 12;
 }
 
+#facebook-iframe {
+  width: 500px;
+  margin: auto;
+}
+
 #icon img {
   width: 50px;
 }
@@ -275,11 +280,23 @@
   .contact-link-div {
     flex-direction: column;
   }
+
+  #map-image {
+    max-height: 300px;
+  }
 }
 
 @media (max-width: 450px) {
   #map-text {
     font-size: 25px;
     max-width: 100%;
+  }
+
+  #map-section {
+    padding: 10px;
+  }
+
+  #facebook-div {
+    margin: 10px;
   }
 }

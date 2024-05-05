@@ -62,7 +62,9 @@ function App() {
       <section id="facebook-section">
         <div id="facebook-div">
           <h3 id="facebook-text">Latest from our <a href="https://www.facebook.com/profile.php?id=100089833360840">Facebook</a>:</h3>
-          <iframe id="facebook-iframe" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02DQiaHDw6UVCb3kLCHQnfUiqZHFTdypXFLYRBhddVDP9rs3znC4Frky5HfvAm8Ckvl%26id%3D100089833360840&show_text=true&width=500&is_preview=true" width="500" height="400" style={{border: "none", overflow: "hidden"}}></iframe>
+          <div id="facebook-iframe">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02DQiaHDw6UVCb3kLCHQnfUiqZHFTdypXFLYRBhddVDP9rs3znC4Frky5HfvAm8Ckvl%26id%3D100089833360840&show_text=true&width=auto&is_preview=false" width="100%" height="560" style={{border: "none", overflow: "hidden"}}></iframe>
+          </div>
         </div>
       </section>
       <section id="about-section">
