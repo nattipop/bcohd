@@ -17,7 +17,7 @@ function App() {
     <div id="home">
       <section id="hero-section">
         <div id="hero">
-           <div className="pa-carousel-widget" style={{width: "100vw", height: "600px", display: "none", zIndex: "1", position: "static"}}
+           <div id="slideshow" className="pa-carousel-widget" style={{width: "100vw", height: "600px", display: "none", zIndex: "1", position: "static"}}
               data-link="https://photos.app.goo.gl/jxnJxALwEdmTB6u76"
               data-title="BCOHD"
               data-description="8 new items added to shared album"
@@ -57,14 +57,13 @@ function App() {
       </div>
       <section id="map-section">
           <h3 id="map-text">Providing full Garage Door Services, Sales and Installation for Barron County and the surrounding area!</h3>
-          <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1714783925/Screen_Shot_2024-05-03_at_7.50.37_PM_iq1m98.png" alt="" />
+          <img id="map-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1714783925/Screen_Shot_2024-05-03_at_7.50.37_PM_iq1m98.png" alt="" />
       </section>
       <section id="facebook-section">
         <div id="facebook-div">
           <h3 id="facebook-text">Latest from our <a href="https://www.facebook.com/profile.php?id=100089833360840">Facebook</a>:</h3>
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02DQiaHDw6UVCb3kLCHQnfUiqZHFTdypXFLYRBhddVDP9rs3znC4Frky5HfvAm8Ckvl%26id%3D100089833360840&show_text=true&width=500&is_preview=true" width="500" height="400" style={{border: "none", overflow: "hidden"}}></iframe>
+          <iframe id="facebook-iframe" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02DQiaHDw6UVCb3kLCHQnfUiqZHFTdypXFLYRBhddVDP9rs3znC4Frky5HfvAm8Ckvl%26id%3D100089833360840&show_text=true&width=500&is_preview=true" width="500" height="400" style={{border: "none", overflow: "hidden"}}></iframe>
         </div>
-
       </section>
       <section id="about-section">
         <h2>About Michael</h2>
