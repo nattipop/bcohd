@@ -59,6 +59,7 @@
   background-color: rgba(0, 0, 0, 0.485);
   padding: 130px 150px 262px 150px;
   z-index: 10;
+  pointer-events: none;
 }
 
 #logo-hero img {
