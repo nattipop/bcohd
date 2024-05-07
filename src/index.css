@@ -35,7 +35,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 h1 {
