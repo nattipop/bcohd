@@ -259,6 +259,14 @@
 
 /* M */
 @media (max-width: 700px) {
+  #icon {
+    position: absolute;
+  }
+
+  #number {
+    position: absolute;
+  }
+
   #logo-hero img {
     min-width: 80%;
     max-width: 80%;
