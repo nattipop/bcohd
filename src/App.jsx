@@ -1,18 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import "./css/App.css"
 import logo from "/BarronCountyOverheadDoors.Orange.png";
 import iconImage from "/Bcohd.png";
-import Gallery from "./Gallery";
 
 function App() {
+  const containerRef = useRef(null);
+
   useEffect(() => {
     const script = document.createElement("script");
-
+    
     script.src = "https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js";
     script.async = true;
     script.tabIndex = "0";
-
+    
     document.body.appendChild(script);
+    window.cloudinary.galleryWidget({
+      container: containerRef.current,
+      cloudName: "dawteptkh",
+      mediaAssets: [{ tag: "bcohd" }],
+      aspectRatio: "4:3"
+    }).render()
   });
 
   return (
@@ -77,12 +84,13 @@ function App() {
         <div id="facebook-div">
           <h3 id="facebook-text">Latest from our <a href="https://www.facebook.com/profile.php?id=100089833360840">Facebook</a>:</h3>
           <div id="facebook-iframe">
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02DQiaHDw6UVCb3kLCHQnfUiqZHFTdypXFLYRBhddVDP9rs3znC4Frky5HfvAm8Ckvl%26id%3D100089833360840&show_text=true&width=auto&is_preview=false" width="100%" height="560" style={{border: "none", overflow: "hidden"}}></iframe>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100089833360840&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1854438328352096" width="500" height="600" style={{border: "none",overflow:"hidden"}} scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
         </div>
       </section>
       <section id="pictures-section">
-        <Gallery />
+        <h3 id="more-pictures">More pictures</h3>
+        <div id="gallery-container" ref={containerRef}></div>
       </section>
       <section id="footer">
         <div>
