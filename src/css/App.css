@@ -77,7 +77,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 350px;
+  min-width: 40%;
+  max-width: 40%;
   position: static;
 }
 
