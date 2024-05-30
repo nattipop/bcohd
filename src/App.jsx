@@ -1,46 +1,38 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import "./css/App.css"
 import logo from "/BarronCountyOverheadDoors.Orange.png";
 import iconImage from "/Bcohd.png";
 
 function App() {
-  const containerRef = useRef(null);
-
   useEffect(() => {
     const script = document.createElement("script");
     
     script.src = "https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js";
     script.async = true;
-    script.tabIndex = "0";
     
     document.body.appendChild(script);
-    window.cloudinary.galleryWidget({
-      container: containerRef.current,
-      cloudName: "dawteptkh",
-      mediaAssets: [{ tag: "bcohd" }],
-      aspectRatio: "4:3"
-    }).render()
-  });
+  }, []);
 
   return (
     <div id="home">
       <section id="hero-section">
-        <div id="hero">
-           <div id="slideshow" className="pa-carousel-widget" style={{width: "100vw", height: "600px", display: "none", zIndex: "1", position: "static"}}
-              data-link="https://photos.app.goo.gl/jxnJxALwEdmTB6u76"
-              data-title="BCOHD"
-              data-description="8 new items added to shared album"
-              data-background-color="#242424">
-              <object data="https://lh3.googleusercontent.com/pw/AP1GczNhQ1zqLen40o1Y43SfB7pWLqfImtGyQEVukAafuIwCagjfuXKMTjTInHox4nimaNFEhkhojrR7qWOO1w6eHGMdBhir1czz-hZ8ffhJoXMb6cZQMek=w1920-h1080"></object>
-              <object data="https://lh3.googleusercontent.com/pw/AP1GczPLNNGYYJxMvwcDytEcrCZPwG543PHtdlUdmxuT1kAs0-S74MQZgPM2ySsCmPNZhaaV2bmG7-X76D_gOM3w2Jv6-ivhzfkc4-hwbu3P6f2m5G-x1dQ=w1920-h1080"></object>
-              <object data="https://lh3.googleusercontent.com/pw/AP1GczNaZQXbV_ZlzFLJIQTaZF7qiT8jSvhqjFDaeW-OeWEjmZagyXLvxN3Rlk9OZ_Nu0hW7wusFf9KaYkLgObVDXmkNY26C4hftn5HrtWl19zLQyU8mSDc=w1920-h1080"></object>
-              <object data="https://lh3.googleusercontent.com/pw/AP1GczNIfRTA2bjFQ4AGsqWDuoLhpszRLQkS--uG3H6GbdFZ7MpqEsbhc3xgPKKCI8ifVI2tOhbB1vd4y8WvCbvjzF8B86yb13l57aFEkX1jS9fXLo-a9JE=w1920-h1080"></object>
-              <object data="https://lh3.googleusercontent.com/pw/AP1GczMgl2HDYNycZTTnTDCPEp-Im3nQ2RCLLDnjFCdDKXV1XpD6HH1pog2Ugg01PPKd4pLWfCP9Tfm9b_s06tQhcPg9DPOmarOYgA2iDHsr6f4vR6gFld8=w1920-h1080"></object>
-              <object data="https://lh3.googleusercontent.com/pw/AP1GczN41kVOaMiawtK_GzyaDT6Q2wCnDHMzQxpmwMFL6jxFo2vK380B1KoBe_zX8Dal7JKjAXUcIGg2DPJJwqa39RxKXruXhaLe-HHhBM8np1LKWRKmNVI=w1920-h1080"></object>
-              <object data="https://lh3.googleusercontent.com/pw/AP1GczPPH7d1zG9S-3do8qHg4lTRdL9jC9lvL40xCN9Z6teCVfbqR0e3gKGMn500C5MtlHOCLLVeGPXsyQbqJT4LjoFJwlgqIX-x500h20qWLh5hIjy3Zrs=w1920-h1080"></object>
-              <object data="https://lh3.googleusercontent.com/pw/AP1GczM_Y-YrnkaZ37sj6JFqMKabwkb2e2brPg_PupEFagT3njJH3CkT5GjELISFlVNa5PIogTOaD-OOCJNvAkBbTkxhoqOradJtcIihFzRL8Ee4S0aP-II=w1920-h1080"></object>
-            </div>
-          <div id="logo-hero">
+        <div id="hero" className="row">
+          <div id="slideshow" className="pa-carousel-widget col" style={{width: "700px", height: "933px", display: "none"}}
+            data-link="https://photos.app.goo.gl/jxnJxALwEdmTB6u76"
+            data-title="BCOHD"
+            data-description="10 new items added to shared album">
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczMhdAfeWJQk1MO4vxPfgmMy9MAcmgH0jf8aewhwIbo2Jp1sRwTDle7Hq9RNMGd118ScfTzjPp9o95RBJnnWQFB3OISK-T6TgX8pqaFHVDF5QeS9p6A=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczPLNNGYYJxMvwcDytEcrCZPwG543PHtdlUdmxuT1kAs0-S74MQZgPM2ySsCmPNZhaaV2bmG7-X76D_gOM3w2Jv6-ivhzfkc4-hwbu3P6f2m5G-x1dQ=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczNaZQXbV_ZlzFLJIQTaZF7qiT8jSvhqjFDaeW-OeWEjmZagyXLvxN3Rlk9OZ_Nu0hW7wusFf9KaYkLgObVDXmkNY26C4hftn5HrtWl19zLQyU8mSDc=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczMgl2HDYNycZTTnTDCPEp-Im3nQ2RCLLDnjFCdDKXV1XpD6HH1pog2Ugg01PPKd4pLWfCP9Tfm9b_s06tQhcPg9DPOmarOYgA2iDHsr6f4vR6gFld8=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczN41kVOaMiawtK_GzyaDT6Q2wCnDHMzQxpmwMFL6jxFo2vK380B1KoBe_zX8Dal7JKjAXUcIGg2DPJJwqa39RxKXruXhaLe-HHhBM8np1LKWRKmNVI=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczPPH7d1zG9S-3do8qHg4lTRdL9jC9lvL40xCN9Z6teCVfbqR0e3gKGMn500C5MtlHOCLLVeGPXsyQbqJT4LjoFJwlgqIX-x500h20qWLh5hIjy3Zrs=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczM_Y-YrnkaZ37sj6JFqMKabwkb2e2brPg_PupEFagT3njJH3CkT5GjELISFlVNa5PIogTOaD-OOCJNvAkBbTkxhoqOradJtcIihFzRL8Ee4S0aP-II=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczMuvKryXCjurtkmcTWOOXOoVOXU3taZm2SeBx9_Ha-UCpZrGLn_Khpbc2UHXYLj8Nz98Ah-j53PtdZnIB7q-K0igV_BbgyvUjOuYmSoorO6MM5zjhs=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczNuz_ClsIyrCPfoKpOEvTwEvhaRDHPILHx5r3jyFD961gytEYn9dVqDFrGNbEzJg6gl-HQFo-Uk1Pz7gmFb9urCACFSh4Vb5sCjxK5yyJBiMY23Xn0=w640-h853"></object>
+            <object data="https://lh3.googleusercontent.com/pw/AP1GczN708iadeo4J3c4mf25ed38LlrPQQUJD0ILIAukRxBHUDFfHaqEBAaF_h5pphjePL_xVc1HNskp8YOq2IUseFnqEe6NOrEU2R-VOl_7raPn7GAJpIk=w640-h853"></object>
+          </div>
+          <div id="logo-hero" className="col">
             <img alt="" src={logo} />
           </div>
         </div>
@@ -56,9 +48,6 @@ function App() {
       </div>
       <div id="contact-div">
         <div className="row">
-          <div className="col">
-            <h3>Contact</h3>
-          </div>
           <div className="contact-link-div">
             <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1714782471/phone-call_1_ppxheg.png" alt="" className="contact-img" width="32px" />
             <a className="contact-links" href="tel:7159317924">715-931-7924</a>
@@ -84,13 +73,9 @@ function App() {
         <div id="facebook-div">
           <h3 id="facebook-text">Latest from our <a href="https://www.facebook.com/profile.php?id=100089833360840">Facebook</a>:</h3>
           <div>
-          <iframe id="facebook-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100089833360840&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1854438328352096" width="500" height="600" style={{border: "none",overflow:"hidden"}} scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <iframe id="facebook-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100089833360840&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1854438328352096" width="500" height="600" style={{border: "none",overflow:"hidden"}} allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
           </div>
         </div>
-      </section>
-      <section id="pictures-section">
-        <h3 id="more-pictures">More pictures</h3>
-        <div id="gallery-container" ref={containerRef}></div>
       </section>
       <section id="footer">
         <div>
