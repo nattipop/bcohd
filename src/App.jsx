@@ -1,9 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./css/App.css"
 import logo from "/BarronCountyOverheadDoors.Orange.png";
 import iconImage from "/Bcohd.png";
+import Form from "./Form";
 
 function App() {
+  const [show, setShow] = useState(false);
+  const [buttonHtml, setButtonHtml] = useState("Send a Message");
+
   useEffect(() => {
     const script = document.createElement("script");
     
@@ -12,6 +16,12 @@ function App() {
     
     document.body.appendChild(script);
   }, []);
+
+  const renderForm = () => {
+    return show ? (
+      <Form />
+    ) : ""
+  }
 
   return (
     <div id="home">
@@ -34,6 +44,8 @@ function App() {
           </div>
           <div id="logo-hero" className="col">
             <img alt="" src={logo} />
+            <button className="contact-button">Build your own door!</button>
+            <p>With HAAS doors</p>
           </div>
         </div>
       </section>
@@ -53,7 +65,17 @@ function App() {
             <a className="contact-links" href="tel:7159317924">715-931-7924</a>
             <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1714782475/mail_ywwaym.png" className="contact-img" alt="" width="32px" />
             <a className="contact-links" href="mailto:michaelstamps@outlook.com">michaelstamps@outlook.com</a>
+            <button className="contact-button" onClick={() => {
+              setShow(!show);
+              if(show){
+                return setButtonHtml("Send a Message")
+              }
+              return setButtonHtml("Close")
+            }}>{buttonHtml}</button>
           </div>
+        </div>
+        <div id="form-div">
+          {renderForm()}
         </div>
       </div>
       <section id="map-section">
@@ -64,7 +86,7 @@ function App() {
         <h2>About Michael</h2>
         <div>
           <div>
-            <img id="about-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1712594735/404306440_295507313453712_3059014787345549309_n_n96kex.jpg" alt="" />
+            <img id="about-image" src="https://res.cloudinary.com/dawteptkh/image/upload/v1717252800/michael_sxepoa.jpg" alt="" />
           </div>
             <h3 id="about-text">Hi! My name is Michael Stamps. I&apos;m a southern boy that has lived all over the south. My beautiful wife and I lived and worked in St. Louis, MO, for 8 years. We moved north to her hometown of Chetek in 2022 where I opened Barron County Overhead Doors LLC.<br/><br/>I began installing and repairing garage doors in high school and have since acquired 15 years of extensive experience in the overhead garage door industry handling residential and commercial installations and repairs. In my years of experience, I&apos;ve partnered with companies large and small to address a wide variety of needs.<br/><br/>In addition to garage doors, I also own True North Facilities Services LLC which handles residential and commercial maintenance. Previous roles have included Facilities Technician for Hillcraft Services which managed maintenance for over 150+ Aldi locations, Facilities Supervisor for Kaldi&apos;s Coffee Roasting Company, Facilities Director/Construction Manager for Domaine Wine Storage.<br/><br/>My wife and I have three beautiful children - 2 boys and a girl - who are our world. We enjoy hiking, traveling and great food and love all that the Northwoods has to offer.</h3>
         </div>
