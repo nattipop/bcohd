@@ -1,3 +1,7 @@
+#root {
+  overflow: hidden;
+}
+
 #home {
   width: 100vw;
   font-size: 20px;
@@ -408,10 +412,23 @@
   }
 
   #map-section {
-    padding: 10px;
+    padding: 25px;
   }
 
   #facebook-div {
     margin: 10px;
+  }
+
+  #contact-div {
+    font-size: 14px !important;
+  }
+
+  .contact-text {
+    font-size: 14px !important;
+  }
+
+  .contact-img {
+    width: 15px;
+    height: 15px;
   }
 }
