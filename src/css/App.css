@@ -393,6 +393,10 @@
   #pictures-section {
     padding: 50px 30px;
   }
+
+  .bcohd-contact-popup {
+    width: 100%;
+  }
 }
 
 @media (max-width: 650px) {
