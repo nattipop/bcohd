@@ -44,8 +44,11 @@ function App() {
           </div>
           <div id="logo-hero" className="col">
             <img alt="" src={logo} />
-            <button className="contact-button">Build your own door!</button>
-            <p>With HAAS doors</p>
+            <button id="haascreate-button" className="contact-button"><a href="https://www.haascreate.com">Build your own door!</a></button>
+            <a href="https://www.haasdoor.com"><div id="haasdoor-div">
+              <img id="haasdoor-logo" src="https://lirp.cdn-website.com/49fbf1c0/import/clib/haasdoor_com/dms3rep/multi/opt/footer-img-129x75-1920w.png" alt="" />
+              <p id="haasdoor-link" >With HAAS doors</p>
+            </div></a>
           </div>
         </div>
       </section>
@@ -61,10 +64,11 @@ function App() {
       <div id="contact-div">
         <div className="row">
           <div className="contact-link-div">
-            <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1714782471/phone-call_1_ppxheg.png" alt="" className="contact-img" width="32px" />
-            <a className="contact-links" href="tel:7159317924">715-931-7924</a>
-            <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1714782475/mail_ywwaym.png" className="contact-img" alt="" width="32px" />
-            <a className="contact-links" href="mailto:michaelstamps@outlook.com">michaelstamps@outlook.com</a>
+            <div className="contact-icons-links">
+              <h3 className="contact-text">Michael Stamps</h3>
+              <img src="https://res.cloudinary.com/dawteptkh/image/upload/v1714782471/phone-call_1_ppxheg.png" alt="" className="contact-img" width="32px" />
+              <a className="contact-links" href="tel:7159317924">715-931-7924</a>
+            </div>
             <button className="contact-button" onClick={() => {
               setShow(!show);
               if(show){

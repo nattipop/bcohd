@@ -16,6 +16,37 @@
   cursor: pointer;
 }
 
+#haasdoor-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+}
+
+#haasdoor-logo {
+  max-width: 100px;
+  margin: 10px !important;
+}
+
+#haasdoor-link {
+  padding: 0px;
+  font-size: 16px;
+  margin: 0px;
+  color: #ffffde;
+}
+
+#haasdoor-div:hover #haasdoor-link {
+  text-decoration: underline;
+}
+
+#haascreate-button a {
+  color: var(--orange);
+}
+
+#haascreate-button a:hover {
+  color: var(--orange-different);
+}
+
 #facebook-iframe {
   width: 500px;
   height: 600px;
@@ -33,6 +64,14 @@
   top: 0;
   left: calc(100vw - 213px);
   z-index: 20;
+}
+
+.contact-icons-links {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
 
 #number-header {
@@ -66,8 +105,8 @@
 #slideshow {
   position: static;
   z-index: 9;
-  width: 60%;
-  max-height: calc(60vw / 3 * 4);
+  width: 50%;
+  max-height: calc(50vw / 3 * 4);
 }
 
 #logo-hero {
@@ -77,9 +116,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 40%;
-  max-width: 40%;
+  min-width: 50%;
+  max-width: 50%;
   position: static;
+  margin-bottom: 100px;
 }
 
 #logo-hero img {
@@ -128,6 +168,13 @@
 
 .contact-img {
   margin: 5px;
+}
+
+.contact-text {
+  color: var(--dark);
+  font-weight: bold;
+  padding: 15px;
+  font-size: 15px;
 }
 
 .bcohd-contact-popup {
@@ -294,13 +341,14 @@
     max-width: 100%;
     min-height: calc(100vw / 3 * 4);
     max-height: calc(100vw / 3 * 4);
-    order: 2;
+    order: 1;
   }
 
   #logo-hero {
     min-width: 100%;
     height: 300px;
-    order: 1;
+    order: 2;
+    padding: 50px 0px;
   }
   #facebook-iframe {
     width: 100%;
