@@ -44,10 +44,10 @@ function App() {
           </div>
           <div id="logo-hero" className="col">
             <img alt="" src={logo} />
-            <button id="haascreate-button" className="contact-button"><a href="https://www.haascreate.com">Build your own door!</a></button>
+            <button id="haascreate-button" className="contact-button"><a href="https://www.haascreate.com">Build your own garage door!</a></button>
             <a href="https://www.haasdoor.com"><div id="haasdoor-div">
               <img id="haasdoor-logo" src="https://lirp.cdn-website.com/49fbf1c0/import/clib/haasdoor_com/dms3rep/multi/opt/footer-img-129x75-1920w.png" alt="" />
-              <p id="haasdoor-link" >With HAAS doors</p>
+              <p id="haasdoor-link" >With HAAS door</p>
             </div></a>
           </div>
         </div>
