@@ -99,7 +99,7 @@ function App() {
         <div id="facebook-div">
           <h3 id="facebook-text">Latest from our <a href="https://www.facebook.com/profile.php?id=100089833360840">Facebook</a>:</h3>
           <div>
-          <iframe id="facebook-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100089833360840&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1854438328352096" width="500" height="600" style={{border: "none",overflow:"hidden"}} allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100089833360840&tabs=timeline&width=800&height=931&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1854438328352096" width="500" height="931" scrolling="no" frameBorder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
         </div>
       </section>
